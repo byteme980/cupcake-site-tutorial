@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Step 1: Change the title of your website. Change "INSERT TITLE HERE"  -->
+    <title>INSERT TITLE HERE</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="order.js"></script>
+    <link href="./styles.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <ul class="nav">
+      <li><a href="home.html">Home</a></li>
+    </ul>
+    <div class="container">
+
+      <div class="jumbotron jumbotron-billboard">
+        <div class="img"></div>
+          <div class='jumbotron-content'>
+            <!-- Step 4: Change the heading. Change "Insert Title Here" -->
+            <h1>Insert Title Here</h1>
+            <!-- Step 5: Change the website description. Replace "Lorem ipsum..." with your own description -->
+            <p>
+              Lorem ipsum dolor sit amet, ea vim velit honestatis, malis dicant quaestio pri ea.
+              Nisl malorum consequat cu nam, an eam erant civibus perfecto. Affert nominati posidonium eam ea,
+              ferri dolore graece et vim, ridens laboramus eum ne. An vis dicta placerat antiopam.
+              No nec omnes temporibus, corpora delicata posidonium vix at.
+              Docendi sententiae et nec, detracto mnesarchum disputationi te duo. Duo viderer epicuri te,
+              maiorum volumus eum te. Pri debet graeci in, ne civibus suavitate assueverit vel.
+              Pri et possim aliquam, facilisis necessitatibus his ad. Nominati mediocrem eos ei,
+              mel no populo prompta.
+            </p>
+          </div>
+      </div>
+
+      <!-- Step 9: Add table-hover after table-bordered below to add the class -->
+      <table class="table table-default table-bordered">
+        <thead>
+          <tr>
+            <th>Cupcakes For Sale</th>
+            <th>Description</th>
+            <th width='10%'>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Step 8:
+          a- Change each of the text between the <td> tags to enter type of cupcake; description, and price of cupcakes
+          b- Copy and paste everything between the <tr> tags and add another row to create more cupcakes for Sale
+        -->
+          <tr>
+            <td>Product 1</td>
+            <td>INSERT DESCRIPTION</td>
+            <td>INSERT PRICE</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Order Now</h3>
+      <form>
+        <label>What Kind of Order?</label>
+        <select id='order-type' class='form-control'>
+          <!-- Step 11a: Build your order form. Add the types of foods you put in your table above by
+                         changing the words between <option></option>. Copy and paste the <option>option</option>
+                         to add additional options
+          -->
+          <option>Option</option>
+        </select>
+
+        <label>How Many?</label>
+        <select id='order-amount' class='form-control'>
+          <!-- Step 11b: Add the amount that you'd like people to be able to buy by doing the same as step 11a
+          -->
+          <option>Option</option>
+        </select>
+      </form>
+
+      <button id='order-button' class='btn btn-primary'>Order!</button>
+
+      <div id='order-confirm-container'>
+
+      </div>
+
+      <!-- where to find us -->
+      <section>
+        <h3>Where to find us</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50458.54415596492!2d-122.42201962610206!3d37.77459293082755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8cf4daec6e4499aa!2sKara&#39;s+Cupcakes!5e0!3m2!1sen!2sus!4v1500771103706"
+          width="600" height="450"
+          frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </section>
+
+
+      <section>
+          <h3>Connect With Us</h3>
+          <section class="social">
+            <!-- Step 12:
+              a- Change the https://www.facebook.com/  to your own facebook site
+              b- Change the https://www.instagram.com/  to your new instagram page
+              c- Change the https://www.twitter.com/  to your new twitter page
+            -->
+            <a href="https://www.facebook.com/" target="_blank">
+              <img  src="./assets/facebook.svg"/ width="40" height="40">
+            </a>
+            <a href="http://www.instagram.com" target="_blank">
+              <img src="./assets/instagram.svg"/ width="40" height="40">
+            </a>
+            <a href="http://www.twitter.com" target="_blank">
+              <img src="./assets/twitter.svg"/ width="40" height="40">
+            </a>
+        </section>
+
+      </section>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  padding-bottom: 20px;
+ /* Step 3: Change the $font to your new font. Make sure to use quotations around the font */
+  font-family: $font;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+   /* Step 2: Change the #337ab7 to your new color */
+  background: #337ab7;
+  text-align: center;
+}
+.nav li{
+  display: inline-block;
+}
+.nav li a {
+  color: white;
+}
+
+.jumbotron {
+  position: relative;
+  padding: 50px;
+}
+
+.jumbotron .jumbotron-content {
+  z-index: 2;
+  position: relative;
+  z-index: 2
+}
+
+.jumbotron-billboard .img {
+  margin-bottom: 0;
+  opacity: .5;
+  color: #fff;
+  position: relative;
+  /* Step 6: Change the jumbotron background image.
+    Select Image you'd like; and write the name of the image  after the / below.  Make sure to include jpg!
+  */
+  background: #000 url("images/");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.jumbotron h1, p {
+  /*Step 7: Update the color of your text in the jumbotron. Change $color to color of your choice*/
+  color: $color;
+  /*text-shadow: 1px 1px #282C34*/
+}
+
+.header-container {
+  width: auto;
+  position: relative;
+  height: 80px;
+}
+
+.order-header {
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.order-success {
+  border-radius: 10px;
+  border: 1px solid #337AB7;
+  background-color: #D1E4F5;
+  height: 50px;
+  width: 250px;
+  right: 80px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.order-success span {
+  position: absolute;
+  top: 50%;
+}
+
+/* table styles */
+th {
+  background: rgb(51, 122, 183);;
+  color: white;
+}
+
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  /* Step 10: Change the $color to the new color you want to show up when hovering over a table row */
+  background-color: $color;
+}
+
+/* order form styles */
+textarea {
+  width: 100%;
+  height: 200px;
+  display: block;
+}
+
+/* "connect with us" panel styles */
+.panel {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 20px 0px 0px;
+}
+
+/* B&W images, color on hover */
+img {
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(0%);
+}
+
+#order-button {
+  margin-top: 10px;
+}
